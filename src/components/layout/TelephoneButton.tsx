@@ -13,7 +13,7 @@ const TelephoneButton: React.FC<Props> = (props) => {
 
   const telephone = t('telephone');
   return (
-    <Button size="lg" icon={<PhoneFilled />} onClick={() => call(telephone)} {...props}>
+    <Button type="link" size="lg" icon={<PhoneFilled />} onClick={() => call(telephone)} {...props}>
       {props.label && telephone}
     </Button>
   );

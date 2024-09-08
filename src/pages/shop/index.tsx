@@ -1,6 +1,6 @@
 import { ShopProductCard } from 'components/card';
 import { Container, Text } from 'components/common';
-import { PAGE_MAX_WIDTH, productsMock as cardsMock } from 'pages/constants';
+import { PAGE_MAX_WIDTH, cardsMock } from 'pages/constants';
 import React from 'react';
 
 const Shop: React.FC = () => {

@@ -36,9 +36,6 @@ const StyledCarousel = styled(CarouselAntd)<StyledCarouselProps>`
     padding-left: ${(props) => `calc(${props.gap} / 2)`};
     padding-right: ${(props) => `calc(${props.gap} / 2)`};
   }
-
-  & > .slick-dots button::after {
-  }
 `;
 
 export type CarouselRef = CarouselRefAntd;

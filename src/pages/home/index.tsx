@@ -4,7 +4,7 @@ import { Button, Carousel, Container, HorizontalList, Image, Tabs, Title } from 
 import ImageContainer from 'components/layout/ImageContainer';
 import { useTranslation } from 'hooks';
 import { DarkBackgroundContainer } from 'components/layout';
-import { PAGE_MAX_WIDTH, productsMock } from 'pages/constants';
+import { PAGE_MAX_WIDTH, cardsMock } from 'pages/constants';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -110,7 +110,7 @@ const Home: React.FC = () => {
           <Title title={t('section2.title')} size="lg" gap={titleGap} />
         </Container>
         <HorizontalList gap="15px" chunkSize={{ xs: 12, sm: 6, lg: 4, xl: 3 }} circular arrows>
-          {productsMock.map((product) => (
+          {cardsMock.map((product) => (
             <ShopProductCard key={product.id} id={product.id} title={product.title} imageHeight="370px" />
           ))}
         </HorizontalList>
